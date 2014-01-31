@@ -34,6 +34,10 @@
 
 @implementation FCViewController
 
+- (IBAction)getPlaylistButtonPressed:(id)sender {
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -45,7 +49,7 @@
     
     // Get a reference to the Forecastr singleton
     forecastr = [Forecastr sharedManager];
-    forecastr.apiKey = @"";
+    forecastr.apiKey = @"a64e6cae035b2f63cdeebca5414fb31b";
 }
 
 - (void)showFatalErrorAlert:(NSString *)alertMsg

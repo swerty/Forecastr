@@ -24,7 +24,13 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "AFHTTPRequestOperationManager.h"
 
 @interface FCViewController : UIViewController
+
+@property (nonatomic, strong) NSMutableArray* playlistArtists;
+@property (nonatomic, strong) NSArray* playlistSongs;
+@property (nonatomic, strong) NSMutableArray* playlistSongTitles;
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		005D1F13189B3B7B00F412F2 /* FCPlaylistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005D1F12189B3B7B00F412F2 /* FCPlaylistTableViewController.m */; };
+		00E96F05189993CC00B0D0CD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E96F04189993CC00B0D0CD /* CoreLocation.framework */; };
 		4AD037DC17FDC2B2002FE68D /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD037CA17FDC2B2002FE68D /* AFHTTPRequestOperation.m */; };
 		4AD037DD17FDC2B2002FE68D /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD037CC17FDC2B2002FE68D /* AFHTTPRequestOperationManager.m */; };
 		4AD037DE17FDC2B2002FE68D /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD037CE17FDC2B2002FE68D /* AFHTTPSessionManager.m */; };
@@ -34,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		005D1F11189B3B7B00F412F2 /* FCPlaylistTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPlaylistTableViewController.h; sourceTree = "<group>"; };
+		005D1F12189B3B7B00F412F2 /* FCPlaylistTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCPlaylistTableViewController.m; sourceTree = "<group>"; };
+		00E96F04189993CC00B0D0CD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4AD037C917FDC2B2002FE68D /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		4AD037CA17FDC2B2002FE68D /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		4AD037CB17FDC2B2002FE68D /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E96F05189993CC00B0D0CD /* CoreLocation.framework in Frameworks */,
 				4AD037E817FDC2EE002FE68D /* SystemConfiguration.framework in Frameworks */,
 				4AD037E617FDC2D6002FE68D /* Security.framework in Frameworks */,
 				D452BB22170C4F0300B415CF /* UIKit.framework in Frameworks */,
@@ -142,6 +148,7 @@
 		D452BB20170C4F0200B415CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00E96F04189993CC00B0D0CD /* CoreLocation.framework */,
 				4AD037E717FDC2EE002FE68D /* SystemConfiguration.framework */,
 				4AD037E517FDC2D6002FE68D /* Security.framework */,
 				D452BB21170C4F0200B415CF /* UIKit.framework */,
@@ -159,6 +166,8 @@
 				D452BB30170C4F0300B415CF /* FCAppDelegate.h */,
 				D452BB31170C4F0300B415CF /* FCAppDelegate.m */,
 				D452BB39170C4F0300B415CF /* MainStoryboard.storyboard */,
+				005D1F11189B3B7B00F412F2 /* FCPlaylistTableViewController.h */,
+				005D1F12189B3B7B00F412F2 /* FCPlaylistTableViewController.m */,
 				D452BB28170C4F0300B415CF /* Supporting Files */,
 			);
 			name = "Example App";
@@ -264,6 +273,7 @@
 				4AD037E117FDC2B2002FE68D /* AFURLConnectionOperation.m in Sources */,
 				4AD037DC17FDC2B2002FE68D /* AFHTTPRequestOperation.m in Sources */,
 				D452BB3E170C4F0300B415CF /* FCViewController.m in Sources */,
+				005D1F13189B3B7B00F412F2 /* FCPlaylistTableViewController.m in Sources */,
 				4AD037E217FDC2B2002FE68D /* AFURLRequestSerialization.m in Sources */,
 				4AD037DE17FDC2B2002FE68D /* AFHTTPSessionManager.m in Sources */,
 				4AD037ED17FDC309002FE68D /* ForecastrAPIClient.m in Sources */,
