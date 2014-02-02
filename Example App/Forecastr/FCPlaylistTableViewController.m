@@ -54,17 +54,21 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return [self.songs count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell;
-    static NSString *cellId = @"cellId";
-    cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    static NSString *CellIdentifier = @"cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:CellIdentifier];
     }
+    
+    NSString * cellContent = [NSString stringWithFormat:@"%@%s%@", self.songs[indexPath.row], " - ", self.artists[indexPath.row]];
+    cell.textLabel.text = cellContent;
     
     return cell;
 }

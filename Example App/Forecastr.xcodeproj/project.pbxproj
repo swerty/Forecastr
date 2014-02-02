@@ -228,6 +228,11 @@
 				CLASSPREFIX = FC;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Rob Phillips";
+				TargetAttributes = {
+					D452BB1D170C4F0200B415CF = {
+						DevelopmentTeam = G6P7H83FK6;
+					};
+				};
 			};
 			buildConfigurationList = D452BB19170C4F0200B415CF /* Build configuration list for PBXProject "Forecastr" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -365,11 +370,14 @@
 		D452BB42170C4F0300B415CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Forecastr/Forecastr-Prefix.pch";
 				INFOPLIST_FILE = "Forecastr/Forecastr-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -377,11 +385,14 @@
 		D452BB43170C4F0300B415CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Forecastr/Forecastr-Prefix.pch";
 				INFOPLIST_FILE = "Forecastr/Forecastr-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

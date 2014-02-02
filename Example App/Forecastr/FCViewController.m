@@ -43,7 +43,9 @@ float currentLatitude, currentLongitude;
 
 @property (nonatomic, strong) NSMutableDictionary* params;
 
-
+@property (nonatomic, strong) NSMutableArray* playlistArtists;
+@property (nonatomic, strong) NSArray* playlistSongs;
+@property (nonatomic, strong) NSMutableArray* playlistSongTitles;
 
 @property (nonatomic, strong) NSDictionary* forecastJSON;
 @property (nonatomic, strong) NSMutableArray* moodTags;
@@ -218,18 +220,18 @@ float currentLatitude, currentLongitude;
     [self performSegueWithIdentifier:@"PlaylistSegue" sender:self];
 }
 
-//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    // Make sure your segue name in storyboard is the same as this line
-//    if ([[segue identifier] isEqualToString:@"PlaylistSegue"])
-//    {
-//        // Get reference to the destination view controller
-//        FCPlaylistTableViewController *pTVC = [segue destinationViewController];
-//        
-//        // Pass any objects to the view controller here, like...
-//        [pTVC];
-//    }
-//}
-//}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"PlaylistSegue"])
+    {
+        // Get reference to the destination view controller
+        FCPlaylistTableViewController *pTVC = [segue destinationViewController];
+        
+        // Pass any objects to the view controller here, like...
+        pTVC.songs = self.playlistSongTitles;
+        pTVC.artists = self.playlistArtists;
+    }
+}
 
 // Kick off asking for weather while specifying exclusions, SI units, and JSONP callback
 - (void)forecastWithMultipleOptions

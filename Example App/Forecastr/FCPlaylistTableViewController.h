@@ -10,4 +10,7 @@
 
 @interface FCPlaylistTableViewController : UITableViewController
 
+@property (strong, nonatomic) NSArray* songs;
+@property (strong, nonatomic) NSArray* artists;
+
 @end
