@@ -75,7 +75,7 @@ float currentLatitude, currentLongitude;
     forecastr = [Forecastr sharedManager];
     forecastr.apiKey = @"a64e6cae035b2f63cdeebca5414fb31b";
     
-    [self performSelector:@selector(forecastWithExclusions) withObject:nil afterDelay:5.0];
+    [self performSelector:@selector(forecastWithExclusions) withObject:nil afterDelay:2.0];
     
     self.manager = [AFHTTPRequestOperationManager manager];
 
